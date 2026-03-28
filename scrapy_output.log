@@ -1,0 +1,1141 @@
+2026-03-28 16:12:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:12:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:12:05 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:12:05 [scrapy.extensions.telnet] INFO: Telnet Password: 4e5074e951c33704
+2026-03-28 16:12:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:12:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Arroz_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:12:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:12:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:12:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:12:05 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:12:05 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:12:05 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:12:05 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:12:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:12:05 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:12:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None)
+2026-03-28 16:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None)
+2026-03-28 16:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Dalfovo Pacote 5Kg', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p'}
+2026-03-28 16:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Giassi Pacote 5Kg', 'preco': '13.62', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p'}
+2026-03-28 16:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None)
+2026-03-28 16:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None)
+2026-03-28 16:12:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:12:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p>
+{'produto': 'Arroz Branco Tipo 1 Giassi Pacote 5Kg', 'preco': '14.6', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p'}
+2026-03-28 16:12:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:12:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Amboni Pacote 5Kg', 'preco': '16.07', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p'}
+2026-03-28 16:12:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None)
+2026-03-28 16:12:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None)
+2026-03-28 16:12:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None)
+2026-03-28 16:12:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None)
+2026-03-28 16:12:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:12:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Kiarroz Pacote 5Kg', 'preco': '15.58', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p'}
+2026-03-28 16:12:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:12:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p>
+{'produto': 'Arroz Branco Tipo 1 Rampinelli Pacote 5Kg', 'preco': '17.05', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p'}
+2026-03-28 16:12:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:12:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Copagro Pacote 5Kg', 'preco': '13.62', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p'}
+2026-03-28 16:12:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:12:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Rampinelli Pacote 5Kg', 'preco': '16.56', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p'}
+2026-03-28 16:12:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:12:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p>
+{'produto': 'Arroz Para Caes Boby Pacote 5Kg', 'preco': '14.9', 'url': 'https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p'}
+2026-03-28 16:12:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:12:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p>
+{'produto': 'Arroz Branco Tipo 1 Kiarroz Pacote 5Kg', 'preco': '17.05', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p'}
+2026-03-28 16:12:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:12:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p>
+{'produto': 'Arroz Branco Tipo 1 Tio Urbano Selecao Especial Pacote 5Kg', 'preco': '21.46', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p'}
+2026-03-28 16:12:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:12:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Urbano Selecao Especial Pacote 5Kg', 'preco': '19.01', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p'}
+2026-03-28 16:12:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None)
+2026-03-28 16:12:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None)
+2026-03-28 16:12:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None)
+2026-03-28 16:13:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p> (referer: https://www.giassi.com.br/sitemap/product-9.xml)
+2026-03-28 16:13:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p>
+{'produto': 'Arroz Luppy Cachorro Pacote 5Kg', 'preco': '15.38', 'url': 'https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p'}
+2026-03-28 16:13:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None)
+2026-03-28 16:13:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None)
+2026-03-28 16:13:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:13:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8234,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 1657452,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 26,
+ 'elapsed_time_seconds': 59.904822,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 13, 5, 242638, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 26,
+ 'httpcache/miss': 26,
+ 'httpcache/store': 26,
+ 'httpcompression/response_bytes': 10451462,
+ 'httpcompression/response_count': 26,
+ 'item_scraped_count': 13,
+ 'items_per_minute': 13.220338983050848,
+ 'log_count/DEBUG': 40,
+ 'log_count/INFO': 3,
+ 'memusage/max': 88911872,
+ 'memusage/startup': 88911872,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'responses_per_minute': 26.440677966101696,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 12, 5, 337816, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:13:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:13:14 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:13:14 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:13:14 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:13:14 [scrapy.extensions.telnet] INFO: Telnet Password: 0a857d32e3638227
+2026-03-28 16:13:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:13:14 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Feijao_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:13:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:13:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:13:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:13:14 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:13:14 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:13:14 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:13:14 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:13:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:13:14 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:13:14 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:13:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None)
+2026-03-28 16:13:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None)
+2026-03-28 16:13:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_giassi_pacote_1kg_161527/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:13:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_giassi_pacote_1kg_161527/p>
+{'produto': 'Feijao Preto Tipo 1 Giassi Pacote 1Kg', 'preco': '5.48', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_giassi_pacote_1kg_161527/p'}
+2026-03-28 16:13:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_1_urbano_pacote_1kg_746452/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:13:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_1_urbano_pacote_1kg_746452/p>
+{'produto': 'Feijao Vermelho Tipo 1 Urbano Pacote 1Kg', 'preco': '11.98', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_1_urbano_pacote_1kg_746452/p'}
+2026-03-28 16:13:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_2_giassi_pacote_1kg_836583/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:13:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_2_giassi_pacote_1kg_836583/p>
+{'produto': 'Feijao Vermelho Tipo 2 Giassi Pacote 1Kg', 'preco': '10.98', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_2_giassi_pacote_1kg_836583/p'}
+2026-03-28 16:13:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None)
+2026-03-28 16:13:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None)
+2026-03-28 16:13:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_1_caldao_pacote_1kg_811700/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:13:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_1_caldao_pacote_1kg_811700/p>
+{'produto': 'Feijao Vermelho Tipo 1 Caldao Pacote 1Kg', 'preco': '11.98', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_1_caldao_pacote_1kg_811700/p'}
+2026-03-28 16:13:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_caldao_pacote_1kg_811696/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:13:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_caldao_pacote_1kg_811696/p>
+{'produto': 'Feijao Preto Tipo 1 Caldao Pacote 1Kg', 'preco': '5.98', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_caldao_pacote_1kg_811696/p'}
+2026-03-28 16:13:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_1_caldo_bom_ouro_pacote_1kg_2624800/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:13:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_1_caldo_bom_ouro_pacote_1kg_2624800/p>
+{'produto': 'Feijao Vermelho Tipo 1 Caldo Bom Ouro Pacote 1Kg', 'preco': '13.68', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_1_caldo_bom_ouro_pacote_1kg_2624800/p'}
+2026-03-28 16:13:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_carioca_tipo_1_urbano_selecao_especial_pacote_1kg_746444/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:13:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_carioca_tipo_1_urbano_selecao_especial_pacote_1kg_746444/p>
+{'produto': 'Feijao Carioca Tipo 1 Urbano Selecao Especial Pacote 1Kg', 'preco': '10.48', 'url': 'https://www.giassi.com.br/feijao_carioca_tipo_1_urbano_selecao_especial_pacote_1kg_746444/p'}
+2026-03-28 16:13:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_carioca_tipo_1_caldo_bom_ouro_pacote_1kg_4854462/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:13:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_carioca_tipo_1_caldo_bom_ouro_pacote_1kg_4854462/p>
+{'produto': 'Feijao Carioca Tipo 1 Caldo Bom Ouro Pacote 1Kg', 'preco': '9.9', 'url': 'https://www.giassi.com.br/feijao_carioca_tipo_1_caldo_bom_ouro_pacote_1kg_4854462/p'}
+2026-03-28 16:13:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_caldo_bom_ouro_pacote_1kg_4854381/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:13:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_caldo_bom_ouro_pacote_1kg_4854381/p>
+{'produto': 'Feijao Preto Tipo 1 Caldo Bom Ouro Pacote 1Kg', 'preco': '5.98', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_caldo_bom_ouro_pacote_1kg_4854381/p'}
+2026-03-28 16:13:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None)
+2026-03-28 16:13:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None)
+2026-03-28 16:13:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_carioca_tipo_2_giassi_pacote_1kg_161446/p> (referer: https://www.giassi.com.br/sitemap/product-4.xml)
+2026-03-28 16:13:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_carioca_tipo_2_giassi_pacote_1kg_161446/p>
+{'produto': 'Feijao Carioca Tipo 2 Giassi Pacote 1Kg', 'preco': '8.88', 'url': 'https://www.giassi.com.br/feijao_carioca_tipo_2_giassi_pacote_1kg_161446/p'}
+2026-03-28 16:13:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None)
+2026-03-28 16:13:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None)
+2026-03-28 16:13:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_urbano_selecao_especial_pacote_1kg_746436/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:13:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_urbano_selecao_especial_pacote_1kg_746436/p>
+{'produto': 'Feijao Preto Tipo 1 Urbano Selecao Especial Pacote 1Kg', 'preco': '6.58', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_urbano_selecao_especial_pacote_1kg_746436/p'}
+2026-03-28 16:14:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None)
+2026-03-28 16:14:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None)
+2026-03-28 16:14:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None)
+2026-03-28 16:14:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None)
+2026-03-28 16:14:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None)
+2026-03-28 16:14:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:14:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7513,
+ 'downloader/request_count': 24,
+ 'downloader/request_method_count/GET': 24,
+ 'downloader/response_bytes': 1451329,
+ 'downloader/response_count': 24,
+ 'downloader/response_status_count/200': 24,
+ 'elapsed_time_seconds': 58.041546,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 14, 12, 908635, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 24,
+ 'httpcache/miss': 24,
+ 'httpcache/store': 24,
+ 'httpcompression/response_bytes': 9129641,
+ 'httpcompression/response_count': 24,
+ 'item_scraped_count': 11,
+ 'items_per_minute': 11.379310344827585,
+ 'log_count/DEBUG': 36,
+ 'log_count/INFO': 3,
+ 'memusage/max': 88961024,
+ 'memusage/startup': 88961024,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'responses_per_minute': 24.82758620689655,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 13, 14, 867089, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:14:12 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:16:23 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:16:23 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:16:23 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:16:23 [scrapy.extensions.telnet] INFO: Telnet Password: ed4dddfe05a6e3f7
+2026-03-28 16:16:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:16:23 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Oleo_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:16:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:16:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:16:23 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:16:23 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:16:23 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:16:23 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:16:23 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:16:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:16:23 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:16:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:16:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None)
+2026-03-28 16:16:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None)
+2026-03-28 16:16:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_canola_tipo_1_liza_especiais_garrafa_900ml_206849/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:16:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_canola_tipo_1_liza_especiais_garrafa_900ml_206849/p>
+{'produto': 'Oleo De Canola Tipo 1 Liza Especiais Garrafa 900Ml', 'preco': '19.58', 'url': 'https://www.giassi.com.br/oleo_de_canola_tipo_1_liza_especiais_garrafa_900ml_206849/p'}
+2026-03-28 16:16:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_algodao_tipo_1_liza_especiais_garrafa_900ml_1324829/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:16:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_algodao_tipo_1_liza_especiais_garrafa_900ml_1324829/p>
+{'produto': 'Oleo De Algodao Tipo 1 Liza Especiais Garrafa 900Ml', 'preco': '16.58', 'url': 'https://www.giassi.com.br/oleo_de_algodao_tipo_1_liza_especiais_garrafa_900ml_1324829/p'}
+2026-03-28 16:16:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None)
+2026-03-28 16:16:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None)
+2026-03-28 16:16:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_soja_tipo_1_liza_garrafa_900ml_2498405/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:16:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_soja_tipo_1_liza_garrafa_900ml_2498405/p>
+{'produto': 'Oleo De Soja Tipo 1 Liza Garrafa 900Ml', 'preco': '7.48', 'url': 'https://www.giassi.com.br/oleo_de_soja_tipo_1_liza_garrafa_900ml_2498405/p'}
+2026-03-28 16:16:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_girassol_tipo_1_salada_garrafa_900ml_5864550/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:16:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_girassol_tipo_1_salada_garrafa_900ml_5864550/p>
+{'produto': 'Oleo De Girassol Tipo 1 Salada Garrafa 900Ml', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/oleo_de_girassol_tipo_1_salada_garrafa_900ml_5864550/p'}
+2026-03-28 16:16:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_milho_tipo_1_liza_especiais_garrafa_900ml_206830/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:16:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_milho_tipo_1_liza_especiais_garrafa_900ml_206830/p>
+{'produto': 'Oleo De Milho Tipo 1 Liza Especiais Garrafa 900Ml', 'preco': '17.48', 'url': 'https://www.giassi.com.br/oleo_de_milho_tipo_1_liza_especiais_garrafa_900ml_206830/p'}
+2026-03-28 16:16:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_girassol_tipo_1_soya_garrafa_900ml_849634/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:16:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_girassol_tipo_1_soya_garrafa_900ml_849634/p>
+{'produto': 'Oleo De Girassol Tipo 1 Soya Garrafa 900Ml', 'preco': '14.98', 'url': 'https://www.giassi.com.br/oleo_de_girassol_tipo_1_soya_garrafa_900ml_849634/p'}
+2026-03-28 16:16:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_soja_tipo1_soya_garrafa_900ml_3348717/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:16:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_soja_tipo1_soya_garrafa_900ml_3348717/p>
+{'produto': 'Oleo De Soja Tipo1 Soya Garrafa 900Ml', 'preco': '7.98', 'url': 'https://www.giassi.com.br/oleo_de_soja_tipo1_soya_garrafa_900ml_3348717/p'}
+2026-03-28 16:16:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None)
+2026-03-28 16:16:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None)
+2026-03-28 16:16:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_soja_tipo_1_coamo_garrafa_900ml_808598/p> (referer: https://www.giassi.com.br/sitemap/product-4.xml)
+2026-03-28 16:16:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_soja_tipo_1_coamo_garrafa_900ml_808598/p>
+{'produto': 'Oleo De Soja Tipo 1 Coamo Garrafa 900Ml', 'preco': '6.98', 'url': 'https://www.giassi.com.br/oleo_de_soja_tipo_1_coamo_garrafa_900ml_808598/p'}
+2026-03-28 16:16:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_milho_tipo_1_salada_garrafa_900ml_5864631/p> (referer: https://www.giassi.com.br/sitemap/product-4.xml)
+2026-03-28 16:16:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_milho_tipo_1_salada_garrafa_900ml_5864631/p>
+{'produto': 'Oleo De Milho Tipo 1 Salada Garrafa 900Ml', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/oleo_de_milho_tipo_1_salada_garrafa_900ml_5864631/p'}
+2026-03-28 16:17:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_girassol_tipo_1_liza_especiais_garrafa_900ml_206822/p> (referer: https://www.giassi.com.br/sitemap/product-4.xml)
+2026-03-28 16:17:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_girassol_tipo_1_liza_especiais_garrafa_900ml_206822/p>
+{'produto': 'Oleo De Girassol Tipo 1 Liza Especiais Garrafa 900Ml', 'preco': '17.9', 'url': 'https://www.giassi.com.br/oleo_de_girassol_tipo_1_liza_especiais_garrafa_900ml_206822/p'}
+2026-03-28 16:17:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_canola_tipo_1_salada_garrafa_900ml_5864470/p> (referer: https://www.giassi.com.br/sitemap/product-4.xml)
+2026-03-28 16:17:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_canola_tipo_1_salada_garrafa_900ml_5864470/p>
+{'produto': 'Oleo De Canola Tipo 1 Salada Garrafa 900Ml', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/oleo_de_canola_tipo_1_salada_garrafa_900ml_5864470/p'}
+2026-03-28 16:17:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None)
+2026-03-28 16:17:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None)
+2026-03-28 16:17:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None)
+2026-03-28 16:17:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None)
+2026-03-28 16:17:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None)
+2026-03-28 16:17:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None)
+2026-03-28 16:17:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None)
+2026-03-28 16:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/oleo_de_canola_tipo_1_soya_garrafa_900ml_1676750/p> (referer: https://www.giassi.com.br/sitemap/product-11.xml)
+2026-03-28 16:17:23 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 25 pages/min), scraped 11 items (at 11 items/min)
+2026-03-28 16:17:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/oleo_de_canola_tipo_1_soya_garrafa_900ml_1676750/p>
+{'produto': 'Oleo De Canola Tipo 1 Soya Garrafa 900Ml', 'preco': '15.58', 'url': 'https://www.giassi.com.br/oleo_de_canola_tipo_1_soya_garrafa_900ml_1676750/p'}
+2026-03-28 16:17:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:17:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7879,
+ 'downloader/request_count': 25,
+ 'downloader/request_method_count/GET': 25,
+ 'downloader/response_bytes': 1540905,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'elapsed_time_seconds': 60.025073,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 17, 23, 541527, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 25,
+ 'httpcache/miss': 25,
+ 'httpcache/store': 25,
+ 'httpcompression/response_bytes': 9706529,
+ 'httpcompression/response_count': 25,
+ 'item_scraped_count': 12,
+ 'items_per_minute': 12.0,
+ 'log_count/DEBUG': 38,
+ 'log_count/INFO': 4,
+ 'memusage/max': 131076096,
+ 'memusage/startup': 88875008,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'responses_per_minute': 25.0,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 16, 23, 516454, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:17:23 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:19:39 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:19:39 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:19:39 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:19:39 [scrapy.extensions.telnet] INFO: Telnet Password: bd3c9d18084fb00a
+2026-03-28 16:19:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:19:39 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Acucar_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:19:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:19:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:19:39 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:19:39 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:19:39 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:19:39 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:19:39 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:19:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:19:39 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:19:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:19:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None)
+2026-03-28 16:19:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None)
+2026-03-28 16:19:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None)
+2026-03-28 16:19:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None)
+2026-03-28 16:19:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_mascavo_minamel_pacote_1kg_1677705/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:19:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_mascavo_minamel_pacote_1kg_1677705/p>
+{'produto': 'Acucar Mascavo Minamel Pacote 1Kg', 'preco': '11.28', 'url': 'https://www.giassi.com.br/acucar_mascavo_minamel_pacote_1kg_1677705/p'}
+2026-03-28 16:19:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_demerara_guarani_pacote_1kg_820067/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:19:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_demerara_guarani_pacote_1kg_820067/p>
+{'produto': 'Acucar Demerara Guarani Pacote 1Kg', 'preco': '4.58', 'url': 'https://www.giassi.com.br/acucar_demerara_guarani_pacote_1kg_820067/p'}
+2026-03-28 16:19:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_mascavo_integral_jasmine_pacote_1kg_1799061/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:19:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_mascavo_integral_jasmine_pacote_1kg_1799061/p>
+{'produto': 'Acucar Mascavo Integral Jasmine Pacote 1Kg', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/acucar_mascavo_integral_jasmine_pacote_1kg_1799061/p'}
+2026-03-28 16:19:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_cristal_organico_uniao_naturais_pacote_1kg_237787/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:19:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_cristal_organico_uniao_naturais_pacote_1kg_237787/p>
+{'produto': 'Acucar Cristal Organico Uniao Naturais Pacote 1Kg', 'preco': '8.28', 'url': 'https://www.giassi.com.br/acucar_cristal_organico_uniao_naturais_pacote_1kg_237787/p'}
+2026-03-28 16:19:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None)
+2026-03-28 16:20:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None)
+2026-03-28 16:20:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None)
+2026-03-28 16:20:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_refinado_especial_uniao_pacote_1kg_120731/p> (referer: https://www.giassi.com.br/sitemap/product-5.xml)
+2026-03-28 16:20:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_refinado_especial_uniao_pacote_1kg_120731/p>
+{'produto': 'Acucar Refinado Especial Uniao Pacote 1Kg', 'preco': '4.88', 'url': 'https://www.giassi.com.br/acucar_refinado_especial_uniao_pacote_1kg_120731/p'}
+2026-03-28 16:20:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_refinado_ducula_especial_pacote_1kg_120677/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:20:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_refinado_ducula_especial_pacote_1kg_120677/p>
+{'produto': 'Acucar Refinado Ducula Especial Pacote 1Kg', 'preco': '3.48', 'url': 'https://www.giassi.com.br/acucar_refinado_ducula_especial_pacote_1kg_120677/p'}
+2026-03-28 16:20:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_refinado_uniao_culinarios_docucar_pacote_1kg_3291502/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:20:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_refinado_uniao_culinarios_docucar_pacote_1kg_3291502/p>
+{'produto': 'Acucar Refinado Uniao Culinarios Docucar Pacote 1Kg', 'preco': '5.58', 'url': 'https://www.giassi.com.br/acucar_refinado_uniao_culinarios_docucar_pacote_1kg_3291502/p'}
+2026-03-28 16:20:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_demerara_uniao_naturais_pacote_1kg_244007/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:20:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_demerara_uniao_naturais_pacote_1kg_244007/p>
+{'produto': 'Acucar Demerara Uniao Naturais Pacote 1Kg', 'preco': '5.48', 'url': 'https://www.giassi.com.br/acucar_demerara_uniao_naturais_pacote_1kg_244007/p'}
+2026-03-28 16:20:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_cristal_uniao_cristalcucar_pacote_1kg_1017705/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:20:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_cristal_uniao_cristalcucar_pacote_1kg_1017705/p>
+{'produto': 'Acucar Cristal Uniao Cristalcucar Pacote 1Kg', 'preco': '3.98', 'url': 'https://www.giassi.com.br/acucar_cristal_uniao_cristalcucar_pacote_1kg_1017705/p'}
+2026-03-28 16:20:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None)
+2026-03-28 16:20:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None)
+2026-03-28 16:20:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/acucar_refinado_especial_guarani_pacote_1kg_738867/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:20:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/acucar_refinado_especial_guarani_pacote_1kg_738867/p>
+{'produto': 'Acucar Refinado Especial Guarani Pacote 1Kg', 'preco': '3.98', 'url': 'https://www.giassi.com.br/acucar_refinado_especial_guarani_pacote_1kg_738867/p'}
+2026-03-28 16:20:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None)
+2026-03-28 16:20:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None)
+2026-03-28 16:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None)
+2026-03-28 16:20:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None)
+2026-03-28 16:20:31 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:20:31 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7132,
+ 'downloader/request_count': 23,
+ 'downloader/request_method_count/GET': 23,
+ 'downloader/response_bytes': 1341835,
+ 'downloader/response_count': 23,
+ 'downloader/response_status_count/200': 23,
+ 'elapsed_time_seconds': 52.064322,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 20, 31, 460060, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 23,
+ 'httpcache/miss': 23,
+ 'httpcache/store': 23,
+ 'httpcompression/response_bytes': 8444115,
+ 'httpcompression/response_count': 23,
+ 'item_scraped_count': 10,
+ 'items_per_minute': 11.538461538461538,
+ 'log_count/DEBUG': 34,
+ 'log_count/INFO': 3,
+ 'memusage/max': 88711168,
+ 'memusage/startup': 88711168,
+ 'request_depth_max': 1,
+ 'response_received_count': 23,
+ 'responses_per_minute': 26.538461538461537,
+ 'scheduler/dequeued': 23,
+ 'scheduler/dequeued/memory': 23,
+ 'scheduler/enqueued': 23,
+ 'scheduler/enqueued/memory': 23,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 19, 39, 395738, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:20:31 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:27:47 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:27:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:27:47 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:27:47 [scrapy.extensions.telnet] INFO: Telnet Password: ff937ed4b6c5ec2e
+2026-03-28 16:27:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:27:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Cafe_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:27:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:27:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:27:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:27:48 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:27:48 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:27:48 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:27:48 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:27:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:27:48 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:27:48 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:27:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None)
+2026-03-28 16:27:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None)
+2026-03-28 16:27:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_3_coracoes_estrada_real_premium_pacote_500g_1111418/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:27:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_3_coracoes_estrada_real_premium_pacote_500g_1111418/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo 3 Coracoes Estrada Real Premium Pacote 500G', 'preco': '38.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_3_coracoes_estrada_real_premium_pacote_500g_1111418/p'}
+2026-03-28 16:27:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_pilao_pouch_500g_798665/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:27:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_pilao_pouch_500g_798665/p>
+{'produto': 'Cafe Torrado E Moido Tradicional Pilao Pouch 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_pilao_pouch_500g_798665/p'}
+2026-03-28 16:27:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_pilao_pacote_500g_479586/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:27:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_pilao_pacote_500g_479586/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Extraforte Pilao Pacote 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_pilao_pacote_500g_479586/p'}
+2026-03-28 16:28:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_iguacu_pacote_500g_821039/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:28:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_iguacu_pacote_500g_821039/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Extraforte Iguacu Pacote 500G', 'preco': '25.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_iguacu_pacote_500g_821039/p'}
+2026-03-28 16:28:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_em_graos_espresso_forza_lor_gourmet_pacote_500g_798681/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:28:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_em_graos_espresso_forza_lor_gourmet_pacote_500g_798681/p>
+{'produto': 'Cafe Torrado Em Graos Espresso Forza Lor Gourmet Pacote 500G', 'preco': '95.9', 'url': 'https://www.giassi.com.br/cafe_torrado_em_graos_espresso_forza_lor_gourmet_pacote_500g_798681/p'}
+2026-03-28 16:28:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_3_coracoes_pacote_500g_355585/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:28:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_3_coracoes_pacote_500g_355585/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Tradicional 3 Coracoes Pacote 500G', 'preco': '29.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_3_coracoes_pacote_500g_355585/p'}
+2026-03-28 16:28:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_3_coracoes_pacote_500g_355593/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_3_coracoes_pacote_500g_355593/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Extraforte 3 Coracoes Pacote 500G', 'preco': '29.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_3_coracoes_pacote_500g_355593/p'}
+2026-03-28 16:28:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_extraforte_bom_jesus_caixa_500g_323004/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:28:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_extraforte_bom_jesus_caixa_500g_323004/p>
+{'produto': 'Cafe Torrado E Moido Extraforte Bom Jesus Caixa 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_extraforte_bom_jesus_caixa_500g_323004/p'}
+2026-03-28 16:28:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_caboclo_pacote_500g_5684650/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:28:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_caboclo_pacote_500g_5684650/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Tradicional Caboclo Pacote 500G', 'preco': '24.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_caboclo_pacote_500g_5684650/p'}
+2026-03-28 16:28:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_pilao_pacote_500g_120979/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:28:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_pilao_pacote_500g_120979/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Tradicional Pilao Pacote 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_pilao_pacote_500g_120979/p'}
+2026-03-28 16:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None)
+2026-03-28 16:28:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None)
+2026-03-28 16:28:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None)
+2026-03-28 16:28:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_bom_jesus_caixa_500g_206458/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_bom_jesus_caixa_500g_206458/p>
+{'produto': 'Cafe Torrado E Moido Tradicional Bom Jesus Caixa 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_bom_jesus_caixa_500g_206458/p'}
+2026-03-28 16:28:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_cafe_do_ponto_pacote_500g_785067/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_cafe_do_ponto_pacote_500g_785067/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Tradicional Cafe Do Ponto Pacote 500G', 'preco': '34.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_cafe_do_ponto_pacote_500g_785067/p'}
+2026-03-28 16:28:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_italiano_pilao_cafeteria_pacote_500g_1123530/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_italiano_pilao_cafeteria_pacote_500g_1123530/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Italiano Pilao Cafeteria Pacote 500G', 'preco': '32.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_italiano_pilao_cafeteria_pacote_500g_1123530/p'}
+2026-03-28 16:28:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_iguacu_pacote_500g_821012/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_iguacu_pacote_500g_821012/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Tradicional Iguacu Pacote 500G', 'preco': '25.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_iguacu_pacote_500g_821012/p'}
+2026-03-28 16:28:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_melitta_sabor_da_fazenda_caixa_500g_1007386/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_melitta_sabor_da_fazenda_caixa_500g_1007386/p>
+{'produto': 'Cafe Torrado E Moido Melitta Sabor Da Fazenda Caixa 500G', 'preco': '37.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_melitta_sabor_da_fazenda_caixa_500g_1007386/p'}
+2026-03-28 16:28:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_damasco_pacote_500g_665770/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_damasco_pacote_500g_665770/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Extraforte Damasco Pacote 500G', 'preco': '24.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_damasco_pacote_500g_665770/p'}
+2026-03-28 16:28:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_espresso_pilao_cafeteria_pacote_500g_960110/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_espresso_pilao_cafeteria_pacote_500g_960110/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Espresso Pilao Cafeteria Pacote 500G', 'preco': '32.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_espresso_pilao_cafeteria_pacote_500g_960110/p'}
+2026-03-28 16:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_pilao_252_graus_pacote_500g_879037/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_pilao_252_graus_pacote_500g_879037/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Pilao 252 Graus Pacote 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_pilao_252_graus_pacote_500g_879037/p'}
+2026-03-28 16:28:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_caboclo_pacote_500g_507636/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_caboclo_pacote_500g_507636/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Extraforte Caboclo Pacote 500G', 'preco': '24.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_caboclo_pacote_500g_507636/p'}
+2026-03-28 16:28:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_intenso_pilao_pacote_500g_232785/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_intenso_pilao_pacote_500g_232785/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Intenso Pilao Pacote 500G', 'preco': '26.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_intenso_pilao_pacote_500g_232785/p'}
+2026-03-28 16:28:48 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 25 pages/min), scraped 20 items (at 20 items/min)
+2026-03-28 16:28:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_damasco_pacote_500g_6088740/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_damasco_pacote_500g_6088740/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Tradicional Damasco Pacote 500G', 'preco': '24.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_tradicional_damasco_pacote_500g_6088740/p'}
+2026-03-28 16:28:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_extraforte_melitta_caixa_500g_6160522/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_extraforte_melitta_caixa_500g_6160522/p>
+{'produto': 'Cafe Torrado E Moido Extraforte Melitta Caixa 500G', 'preco': '27.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_extraforte_melitta_caixa_500g_6160522/p'}
+2026-03-28 16:28:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_especial_melitta_caixa_500g_7407645/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_especial_melitta_caixa_500g_7407645/p>
+{'produto': 'Cafe Torrado E Moido Especial Melitta Caixa 500G', 'preco': '48.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_especial_melitta_caixa_500g_7407645/p'}
+2026-03-28 16:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_cafe_do_ponto_pacote_500g_164739/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:28:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_cafe_do_ponto_pacote_500g_164739/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Extraforte Cafe Do Ponto Pacote 500G', 'preco': '39.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_extraforte_cafe_do_ponto_pacote_500g_164739/p'}
+2026-03-28 16:29:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_intenso_damasco_pacote_500g_349100/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:29:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_intenso_damasco_pacote_500g_349100/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Intenso Damasco Pacote 500G', 'preco': '24.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_intenso_damasco_pacote_500g_349100/p'}
+2026-03-28 16:29:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_coado_a_vacuo_pilao_cafeteria_pacote_500g_960128/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:29:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_coado_a_vacuo_pilao_cafeteria_pacote_500g_960128/p>
+{'produto': 'Cafe Torrado E Moido Coado A Vacuo Pilao Cafeteria Pacote 500G', 'preco': '32.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_coado_a_vacuo_pilao_cafeteria_pacote_500g_960128/p'}
+2026-03-28 16:29:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_cafe_do_ponto_pacote_500g_164720/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:29:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_cafe_do_ponto_pacote_500g_164720/p>
+{'produto': 'Cafe Torrado E Moido A Vacuo Cafe Do Ponto Pacote 500G', 'preco': '39.9', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_a_vacuo_cafe_do_ponto_pacote_500g_164720/p'}
+2026-03-28 16:29:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_melitta_caixa_500g_252247/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml)
+2026-03-28 16:29:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_melitta_caixa_500g_252247/p>
+{'produto': 'Cafe Torrado E Moido Tradicional Melitta Caixa 500G', 'preco': '27.98', 'url': 'https://www.giassi.com.br/cafe_torrado_e_moido_tradicional_melitta_caixa_500g_252247/p'}
+2026-03-28 16:29:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None)
+2026-03-28 16:29:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None)
+2026-03-28 16:29:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None)
+2026-03-28 16:29:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None)
+2026-03-28 16:29:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None)
+2026-03-28 16:29:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None)
+2026-03-28 16:29:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_torrado_em_graos_bourbon_baggio_pacote_500g_1580418/p> (referer: https://www.giassi.com.br/sitemap/product-9.xml)
+2026-03-28 16:29:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_torrado_em_graos_bourbon_baggio_pacote_500g_1580418/p>
+{'produto': 'Cafe Torrado Em Graos Bourbon Baggio Pacote 500G', 'preco': '69.98', 'url': 'https://www.giassi.com.br/cafe_torrado_em_graos_bourbon_baggio_pacote_500g_1580418/p'}
+2026-03-28 16:29:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_melitta_spresso_gourmet_graos_pacote_500gr_1444131/p> (referer: https://www.giassi.com.br/sitemap/product-10.xml)
+2026-03-28 16:29:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_melitta_spresso_gourmet_graos_pacote_500gr_1444131/p>
+{'produto': 'Cafe Melitta Spresso Gourmet Graos Pacote 500Gr', 'preco': '79.9', 'url': 'https://www.giassi.com.br/cafe_melitta_spresso_gourmet_graos_pacote_500gr_1444131/p'}
+2026-03-28 16:29:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None)
+2026-03-28 16:29:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None)
+2026-03-28 16:29:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/cafe_espresso_em_graos_jurere_pacote_500g_1699105/p> (referer: https://www.giassi.com.br/sitemap/product-11.xml)
+2026-03-28 16:29:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/cafe_espresso_em_graos_jurere_pacote_500g_1699105/p>
+{'produto': 'Cafe Espresso Em Graos Jurere Pacote 500G', 'preco': '60.9', 'url': 'https://www.giassi.com.br/cafe_espresso_em_graos_jurere_pacote_500g_1699105/p'}
+2026-03-28 16:29:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:29:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 15184,
+ 'downloader/request_count': 44,
+ 'downloader/request_method_count/GET': 44,
+ 'downloader/response_bytes': 3579182,
+ 'downloader/response_count': 44,
+ 'downloader/response_status_count/200': 44,
+ 'elapsed_time_seconds': 105.533521,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 29, 33, 803417, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 44,
+ 'httpcache/miss': 44,
+ 'httpcache/store': 44,
+ 'httpcompression/response_bytes': 22791856,
+ 'httpcompression/response_count': 44,
+ 'item_scraped_count': 31,
+ 'items_per_minute': 17.714285714285715,
+ 'log_count/DEBUG': 76,
+ 'log_count/INFO': 4,
+ 'memusage/max': 135786496,
+ 'memusage/startup': 88858624,
+ 'request_depth_max': 1,
+ 'response_received_count': 44,
+ 'responses_per_minute': 25.142857142857142,
+ 'scheduler/dequeued': 44,
+ 'scheduler/dequeued/memory': 44,
+ 'scheduler/enqueued': 44,
+ 'scheduler/enqueued/memory': 44,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 27, 48, 269896, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:29:33 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:36:23 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:36:23 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:36:23 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:36:23 [scrapy.extensions.telnet] INFO: Telnet Password: 53d53ce5279082cc
+2026-03-28 16:36:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:36:23 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Feijao_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:36:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:36:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:36:23 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:36:23 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:36:23 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:36:23 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:36:23 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:36:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:36:23 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:36:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_giassi_pacote_1kg_161527/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_1_caldao_pacote_1kg_811700/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_urbano_selecao_especial_pacote_1kg_746436/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_carioca_tipo_2_giassi_pacote_1kg_161446/p> (referer: https://www.giassi.com.br/sitemap/product-4.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_giassi_pacote_1kg_161527/p>
+{'produto': 'Feijao Preto Tipo 1 Giassi Pacote 1Kg', 'preco': '5.48', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_giassi_pacote_1kg_161527/p'}
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_caldao_pacote_1kg_811696/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_1_caldao_pacote_1kg_811700/p>
+{'produto': 'Feijao Vermelho Tipo 1 Caldao Pacote 1Kg', 'preco': '11.98', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_1_caldao_pacote_1kg_811700/p'}
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_1_caldo_bom_ouro_pacote_1kg_2624800/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_carioca_tipo_1_urbano_selecao_especial_pacote_1kg_746444/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_carioca_tipo_1_caldo_bom_ouro_pacote_1kg_4854462/p> (referer: https://www.giassi.com.br/sitemap/product-3.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_preto_tipo_1_caldo_bom_ouro_pacote_1kg_4854381/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_urbano_selecao_especial_pacote_1kg_746436/p>
+{'produto': 'Feijao Preto Tipo 1 Urbano Selecao Especial Pacote 1Kg', 'preco': '6.58', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_urbano_selecao_especial_pacote_1kg_746436/p'}
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_1_urbano_pacote_1kg_746452/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/feijao_vermelho_tipo_2_giassi_pacote_1kg_836583/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml) ['cached']
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_carioca_tipo_2_giassi_pacote_1kg_161446/p>
+{'produto': 'Feijao Carioca Tipo 2 Giassi Pacote 1Kg', 'preco': '8.88', 'url': 'https://www.giassi.com.br/feijao_carioca_tipo_2_giassi_pacote_1kg_161446/p'}
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_caldao_pacote_1kg_811696/p>
+{'produto': 'Feijao Preto Tipo 1 Caldao Pacote 1Kg', 'preco': '5.98', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_caldao_pacote_1kg_811696/p'}
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_1_caldo_bom_ouro_pacote_1kg_2624800/p>
+{'produto': 'Feijao Vermelho Tipo 1 Caldo Bom Ouro Pacote 1Kg', 'preco': '13.68', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_1_caldo_bom_ouro_pacote_1kg_2624800/p'}
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_carioca_tipo_1_urbano_selecao_especial_pacote_1kg_746444/p>
+{'produto': 'Feijao Carioca Tipo 1 Urbano Selecao Especial Pacote 1Kg', 'preco': '10.48', 'url': 'https://www.giassi.com.br/feijao_carioca_tipo_1_urbano_selecao_especial_pacote_1kg_746444/p'}
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_carioca_tipo_1_caldo_bom_ouro_pacote_1kg_4854462/p>
+{'produto': 'Feijao Carioca Tipo 1 Caldo Bom Ouro Pacote 1Kg', 'preco': '9.9', 'url': 'https://www.giassi.com.br/feijao_carioca_tipo_1_caldo_bom_ouro_pacote_1kg_4854462/p'}
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_preto_tipo_1_caldo_bom_ouro_pacote_1kg_4854381/p>
+{'produto': 'Feijao Preto Tipo 1 Caldo Bom Ouro Pacote 1Kg', 'preco': '5.98', 'url': 'https://www.giassi.com.br/feijao_preto_tipo_1_caldo_bom_ouro_pacote_1kg_4854381/p'}
+2026-03-28 16:36:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_1_urbano_pacote_1kg_746452/p>
+{'produto': 'Feijao Vermelho Tipo 1 Urbano Pacote 1Kg', 'preco': '11.98', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_1_urbano_pacote_1kg_746452/p'}
+2026-03-28 16:36:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/feijao_vermelho_tipo_2_giassi_pacote_1kg_836583/p>
+{'produto': 'Feijao Vermelho Tipo 2 Giassi Pacote 1Kg', 'preco': '10.98', 'url': 'https://www.giassi.com.br/feijao_vermelho_tipo_2_giassi_pacote_1kg_836583/p'}
+2026-03-28 16:36:24 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:36:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7513,
+ 'downloader/request_count': 24,
+ 'downloader/request_method_count/GET': 24,
+ 'downloader/response_bytes': 1451329,
+ 'downloader/response_count': 24,
+ 'downloader/response_status_count/200': 24,
+ 'elapsed_time_seconds': 0.599475,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 36, 24, 12213, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 24,
+ 'httpcompression/response_bytes': 9129641,
+ 'httpcompression/response_count': 24,
+ 'item_scraped_count': 11,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 36,
+ 'log_count/INFO': 3,
+ 'memusage/max': 88702976,
+ 'memusage/startup': 88702976,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 24,
+ 'scheduler/dequeued/memory': 24,
+ 'scheduler/enqueued': 24,
+ 'scheduler/enqueued/memory': 24,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 36, 23, 412738, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:36:24 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:42:00 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:42:00 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:42:00 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:42:00 [scrapy.extensions.telnet] INFO: Telnet Password: f7951262b615e2c9
+2026-03-28 16:42:00 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:42:00 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Arroz_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:42:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:42:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:42:00 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:42:00 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:42:00 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:42:00 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:42:00 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:42:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:42:00 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:42:00 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:42:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None)
+2026-03-28 16:42:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None)
+2026-03-28 16:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml)
+2026-03-28 16:42:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Dalfovo Pacote 5Kg', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p'}
+2026-03-28 16:42:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml)
+2026-03-28 16:42:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Giassi Pacote 5Kg', 'preco': '13.62', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p'}
+2026-03-28 16:42:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None)
+2026-03-28 16:42:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None)
+2026-03-28 16:42:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:42:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p>
+{'produto': 'Arroz Branco Tipo 1 Giassi Pacote 5Kg', 'preco': '14.6', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p'}
+2026-03-28 16:42:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml)
+2026-03-28 16:42:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Amboni Pacote 5Kg', 'preco': '16.07', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p'}
+2026-03-28 16:42:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None)
+2026-03-28 16:42:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None)
+2026-03-28 16:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None)
+2026-03-28 16:42:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None)
+2026-03-28 16:42:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:42:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Kiarroz Pacote 5Kg', 'preco': '15.58', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p'}
+2026-03-28 16:42:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:42:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p>
+{'produto': 'Arroz Branco Tipo 1 Rampinelli Pacote 5Kg', 'preco': '17.05', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p'}
+2026-03-28 16:42:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:42:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Copagro Pacote 5Kg', 'preco': '13.62', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p'}
+2026-03-28 16:42:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:42:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Rampinelli Pacote 5Kg', 'preco': '16.56', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p'}
+2026-03-28 16:42:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml)
+2026-03-28 16:42:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p>
+{'produto': 'Arroz Para Caes Boby Pacote 5Kg', 'preco': '14.9', 'url': 'https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p'}
+2026-03-28 16:42:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:42:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p>
+{'produto': 'Arroz Branco Tipo 1 Kiarroz Pacote 5Kg', 'preco': '17.05', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p'}
+2026-03-28 16:42:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:42:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p>
+{'produto': 'Arroz Branco Tipo 1 Tio Urbano Selecao Especial Pacote 5Kg', 'preco': '21.46', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p'}
+2026-03-28 16:42:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml)
+2026-03-28 16:42:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Urbano Selecao Especial Pacote 5Kg', 'preco': '19.01', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p'}
+2026-03-28 16:42:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None)
+2026-03-28 16:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None)
+2026-03-28 16:42:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None)
+2026-03-28 16:42:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p> (referer: https://www.giassi.com.br/sitemap/product-9.xml)
+2026-03-28 16:42:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p>
+{'produto': 'Arroz Luppy Cachorro Pacote 5Kg', 'preco': '15.38', 'url': 'https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p'}
+2026-03-28 16:43:00 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 13 items (at 13 items/min)
+2026-03-28 16:43:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None)
+2026-03-28 16:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None)
+2026-03-28 16:43:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:43:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8234,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 1658026,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 26,
+ 'elapsed_time_seconds': 63.041584,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 43, 3, 584120, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 26,
+ 'httpcache/miss': 26,
+ 'httpcache/store': 26,
+ 'httpcompression/response_bytes': 10451462,
+ 'httpcompression/response_count': 26,
+ 'item_scraped_count': 13,
+ 'items_per_minute': 12.38095238095238,
+ 'log_count/DEBUG': 40,
+ 'log_count/INFO': 4,
+ 'memusage/max': 131481600,
+ 'memusage/startup': 90116096,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'responses_per_minute': 24.76190476190476,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 42, 0, 542536, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:43:03 [scrapy.core.engine] INFO: Spider closed (finished)
+2026-03-28 16:45:24 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-03-28 16:45:24 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-03-28 16:45:24 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2026-03-28 16:45:24 [scrapy.extensions.telnet] INFO: Telnet Password: aefc9b85b5ffacd0
+2026-03-28 16:45:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2026-03-28 16:45:24 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Pesquisa_Arroz_Giassi',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'HTTPCACHE_DIR': 'cache',
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503],
+ 'LOG_FILE': 'scrapy_output.log',
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>}
+2026-03-28 16:45:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2026-03-28 16:45:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-03-28 16:45:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.SQLAlchemyPipeline']
+2026-03-28 16:45:25 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SQLAlchemyPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-03-28 16:45:25 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SQLAlchemyPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-03-28 16:45:25 [py.warnings] WARNING: /home/joaopaulo/git/extracaoDeDados/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SQLAlchemyPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-03-28 16:45:25 [scrapy.core.engine] INFO: Spider opened
+2026-03-28 16:45:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-03-28 16:45:25 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in .scrapy/cache
+2026-03-28 16:45:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-0.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-1.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-2.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-3.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-4.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-5.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-6.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-7.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-8.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-9.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-10.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-11.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/sitemap/product-12.xml> (referer: None) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p> (referer: https://www.giassi.com.br/sitemap/product-0.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p> (referer: https://www.giassi.com.br/sitemap/product-9.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p> (referer: https://www.giassi.com.br/sitemap/product-7.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Dalfovo Pacote 5Kg', 'preco': 'Preço não disponível', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_dalfovo_pacote_5kg_128376/p'}
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Kiarroz Pacote 5Kg', 'preco': '15.58', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_kiarroz_pacote_5kg_123439/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p>
+{'produto': 'Arroz Luppy Cachorro Pacote 5Kg', 'preco': '15.38', 'url': 'https://www.giassi.com.br/arroz_luppy_cachorro_pacote_5kg_690902/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p>
+{'produto': 'Arroz Branco Tipo 1 Rampinelli Pacote 5Kg', 'preco': '17.05', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_rampinelli_pacote_5kg_9985166/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Copagro Pacote 5Kg', 'preco': '13.62', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_copagro_pacote_5kg_7576676/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Rampinelli Pacote 5Kg', 'preco': '16.56', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_rampinelli_pacote_5kg_5211085/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p>
+{'produto': 'Arroz Para Caes Boby Pacote 5Kg', 'preco': '14.9', 'url': 'https://www.giassi.com.br/arroz_para_caes_boby_pacote_5kg_1101080/p'}
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p> (referer: https://www.giassi.com.br/sitemap/product-6.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p>
+{'produto': 'Arroz Branco Tipo 1 Kiarroz Pacote 5Kg', 'preco': '17.05', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_kiarroz_pacote_5kg_123366/p'}
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p> (referer: https://www.giassi.com.br/sitemap/product-2.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p> (referer: https://www.giassi.com.br/sitemap/product-1.xml) ['cached']
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p>
+{'produto': 'Arroz Branco Tipo 1 Tio Urbano Selecao Especial Pacote 5Kg', 'preco': '21.46', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_tio_urbano_selecao_especial_pacote_5kg_9810951/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Urbano Selecao Especial Pacote 5Kg', 'preco': '19.01', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_urbano_selecao_especial_pacote_5kg_9811419/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p>
+{'produto': 'Arroz Branco Tipo 1 Giassi Pacote 5Kg', 'preco': '14.6', 'url': 'https://www.giassi.com.br/arroz_branco_tipo_1_giassi_pacote_5kg_4000250/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Amboni Pacote 5Kg', 'preco': '16.07', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_amboni_pacote_5kg_813729/p'}
+2026-03-28 16:45:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p>
+{'produto': 'Arroz Parboilizado Tipo 1 Giassi Pacote 5Kg', 'preco': '13.62', 'url': 'https://www.giassi.com.br/arroz_parboilizado_tipo_1_giassi_pacote_5kg_9888985/p'}
+2026-03-28 16:45:25 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-03-28 16:45:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8234,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 1658026,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 26,
+ 'elapsed_time_seconds': 0.572266,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 3, 28, 19, 45, 25, 679158, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 26,
+ 'httpcompression/response_bytes': 10451462,
+ 'httpcompression/response_count': 26,
+ 'item_scraped_count': 13,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 40,
+ 'log_count/INFO': 3,
+ 'memusage/max': 89124864,
+ 'memusage/startup': 89124864,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'start_time': datetime.datetime(2026, 3, 28, 19, 45, 25, 106892, tzinfo=datetime.timezone.utc)}
+2026-03-28 16:45:25 [scrapy.core.engine] INFO: Spider closed (finished)
