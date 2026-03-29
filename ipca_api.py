@@ -20,7 +20,7 @@ def salvar_ipca(dados):
     for item in dados:
         data_original = item['data']
         data = datetime.strptime(data_original, "%d/%m/%Y").strftime("%Y-%m")
-        valor = float(item['valor'].replace(',', '.'))
+        valor = float(item['valor'].replace(',', '.')) / 100
 
         existe = session.query(IPCA).filter_by(data=data).first()
         

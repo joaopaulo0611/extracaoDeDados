@@ -78,7 +78,7 @@ def total(cesta):
 
 # IPCA
 def calcular_ipca_acumulado(ano):
-    dados = session.query(IPCA).all()
+    dados = session.query(IPCA).order_by(IPCA.data).all()
     
     acumulado = 1
 
@@ -88,8 +88,8 @@ def calcular_ipca_acumulado(ano):
         except:
             continue
 
-        if ano_dado <= ano:
-            acumulado *= (1 + d.valor / 100)
+        if ano_dado >= ano:
+            acumulado *= (1 + d.valor)
 
     return acumulado - 1
 
